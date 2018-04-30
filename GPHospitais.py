@@ -83,5 +83,5 @@ def getPlaceDetails(placeId):
 
 
 df = hospitalsSP({'lat':latitude,'lng':longitude})
-df.to_csv(caminho_completo_csv, sep=',')
+df.to_csv(caminho_completo_csv, sep=',', encoding='UTF-8' )
 print("Script executado, seu arquivo CSV se encontra em " + caminho_completo_csv)
